@@ -1,9 +1,6 @@
 /**
- * projectName: cloud2020-   
- * fileName: userController.java  
- * packageName: com.demo.controller   
- * date: 2020-09-21
- * copyright(c) 2017-2020 xxx公司  
+ * projectName: cloud2020- fileName: userController.java packageName: com.demo.controller date:
+ * 2020-09-21 copyright(c) 2017-2020 xxx公司
  */
 package com.demo.controller;
 
@@ -24,7 +21,7 @@ import javax.annotation.Resource;
  * @packageName: com.demo.controller
  * @description: user控制类
  * @data: 2020-09-21
- **/
+ */
 @RestController
 public class UserController {
 
@@ -33,7 +30,7 @@ public class UserController {
 
     @GetMapping("/order80/newUser")
     public Result<User> creatUser(@RequestParam("id") String id) {
-        //RestTemplate restTemplate = new RestTemplate();
+        // RestTemplate restTemplate = new RestTemplate();
         System.out.println("进入");
         User user = new User();
         user.setName("小新");
@@ -45,7 +42,7 @@ public class UserController {
 
     @GetMapping("/order80/timeout")
     public Result<User> creatUser2(@RequestParam("id") String id) {
-        //RestTemplate restTemplate = new RestTemplate();
+        // RestTemplate restTemplate = new RestTemplate();
         System.out.println("进入");
         User user = new User();
         user.setName("小新");
@@ -54,6 +51,4 @@ public class UserController {
         Result user1 = getuser.getUser3(id);
         return user1;
     }
-
-
 }

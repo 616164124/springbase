@@ -1,9 +1,6 @@
 /**
- * projectName: cloud2020-   
- * fileName: Payment8001.java  
- * packageName: com   
- * date: 2020-09-20
- * copyright(c) 2017-2020 xxx公司  
+ * projectName: cloud2020- fileName: Payment8001.java packageName: com date: 2020-09-20 copyright(c)
+ * 2017-2020 xxx公司
  */
 package com;
 
@@ -21,12 +18,12 @@ import org.springframework.stereotype.Component;
  * @packageName: com
  * @description: 8001启动类
  * @data: 2020-09-20
- **/
+ */
 @SpringBootApplication
 @EnableEurekaClient
 @EnableDiscoveryClient
 public class Payment8001 {
     public static void main(String[] args) {
-        SpringApplication.run(Payment8001.class,args);
+        SpringApplication.run(Payment8001.class, args);
     }
 }

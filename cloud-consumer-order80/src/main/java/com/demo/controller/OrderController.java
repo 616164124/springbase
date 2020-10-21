@@ -1,9 +1,6 @@
 /**
- * projectName: cloud2020-   
- * fileName: OrderController.java  
- * packageName: com.demo.controller   
- * date: 2020-09-20
- * copyright(c) 2017-2020 xxx公司  
+ * projectName: cloud2020- fileName: OrderController.java packageName: com.demo.controller date:
+ * 2020-09-20 copyright(c) 2017-2020 xxx公司
  */
 package com.demo.controller;
 
@@ -23,24 +20,23 @@ import javax.annotation.Resource;
  * @packageName: com.demo.controller
  * @description: ordercontroller
  * @data: 2020-09-20
- **/
+ */
 @RestController
 public class OrderController {
 
-    //成功的
-    //public final static String PAYMENT_URL = "http://localhost:8001";
+    // 成功的
+    // public final static String PAYMENT_URL = "http://localhost:8001";
 
     //  public final static String PAYMENT_URL = "http://cloud-payment-service";
 
-    public final static String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
-
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Resource
     private RestTemplate restTemplate;
 
     @GetMapping("/order80/newUser")
     public Result<User> creatUser() {
-        //RestTemplate restTemplate = new RestTemplate();
+        // RestTemplate restTemplate = new RestTemplate();
         System.out.println("进入");
         User user = new User();
         user.setName("小新");
@@ -49,6 +45,4 @@ public class OrderController {
 
         return restTemplate.postForObject(PAYMENT_URL + "/createUser3", user, Result.class);
     }
-
-
 }

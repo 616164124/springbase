@@ -1,9 +1,6 @@
 /**
- * projectName: cloud2020-   
- * fileName: server7001.java  
- * packageName: com.demo   
- * date: 2020-09-20
- * copyright(c) 2017-2020 xxx公司  
+ * projectName: cloud2020- fileName: server7001.java packageName: com.demo date: 2020-09-20
+ * copyright(c) 2017-2020 xxx公司
  */
 package com.demo;
 
@@ -19,12 +16,11 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * @packageName: com.demo
  * @description: 启动类
  * @data: 2020-09-20
- **/
+ */
 @SpringBootApplication
 @EnableEurekaServer
 public class server7002 {
     public static void main(String[] args) {
-        SpringApplication.run(server7002.class,args);
+        SpringApplication.run(server7002.class, args);
     }
 }
-

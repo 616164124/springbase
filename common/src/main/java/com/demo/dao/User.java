@@ -1,9 +1,6 @@
 /**
- * projectName: cloud2020-   
- * fileName: User.java  
- * packageName: com.demo.dao   
- * date: 2020-09-20
- * copyright(c) 2017-2020 xxx公司  
+ * projectName: cloud2020- fileName: User.java packageName: com.demo.dao date: 2020-09-20
+ * copyright(c) 2017-2020 xxx公司
  */
 package com.demo.dao;
 
@@ -16,7 +13,7 @@ import java.io.Serializable;
  * @packageName: com.demo.dao
  * @description: User实体类
  * @data: 2020-09-20
- **/
+ */
 public class User implements Serializable {
     private int id;
     private String name;

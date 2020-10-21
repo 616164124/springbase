@@ -14,6 +14,5 @@ public interface Getuser {
     public Result<User> getUser2(@RequestParam("id") String id);
 
     @GetMapping("/getUserId2")
-    public Result getUser3(@RequestParam("id") String id) ;
-
+    public Result getUser3(@RequestParam("id") String id);
 }

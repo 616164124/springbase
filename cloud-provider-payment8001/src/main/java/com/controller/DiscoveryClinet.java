@@ -1,9 +1,6 @@
 /**
- * projectName: cloud2020-   
- * fileName: DiscoveryClinet.java  
- * packageName: com.controller   
- * date: 2020-09-20
- * copyright(c) 2017-2020 xxx公司  
+ * projectName: cloud2020- fileName: DiscoveryClinet.java packageName: com.controller date:
+ * 2020-09-20 copyright(c) 2017-2020 xxx公司
  */
 package com.controller;
 
@@ -22,7 +19,7 @@ import java.util.List;
  * @packageName: com.controller
  * @description: 服务发现
  * @data: 2020-09-20
- **/
+ */
 @RestController
 public class DiscoveryClinet {
 
@@ -30,15 +27,14 @@ public class DiscoveryClinet {
     private DiscoveryClient discoveryClient;
 
     @GetMapping("/discovery")
-    public List<String> discoveryClient(){
+    public List<String> discoveryClient() {
         List<String> services = discoveryClient.getServices();
-        //获取实例 及实例中的具体信息
-        /*List<ServiceInstance> instances = discoveryClient.getInstances();
-        for (ServiceInstance instance : instances) {
-            instance.getHost();
-        }
-*/
+        // 获取实例 及实例中的具体信息
+    /*List<ServiceInstance> instances = discoveryClient.getInstances();
+            for (ServiceInstance instance : instances) {
+                instance.getHost();
+            }
+    */
         return services;
     }
-
 }

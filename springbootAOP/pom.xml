@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>SpringSectury2020</artifactId>
+    <artifactId>sprngbootAOP</artifactId>
 
     <dependencies>
 

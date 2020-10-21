@@ -1,9 +1,6 @@
 /**
- * projectName: cloud2020-   
- * fileName: Result.java  
- * packageName: com.demo.dao   
- * date: 2020-09-20
- * copyright(c) 2017-2020 xxx公司  
+ * projectName: cloud2020- fileName: Result.java packageName: com.demo.dao date: 2020-09-20
+ * copyright(c) 2017-2020 xxx公司
  */
 package com.demo.dao;
 
@@ -17,9 +14,8 @@ import java.io.Serializable;
  * @packageName: com.demo.dao
  * @description: 公共信息结果类
  * @data: 2020-09-20
- **/
-
-public class Result<T>  implements Serializable {
+ */
+public class Result<T> implements Serializable {
     private Integer code;
     private String mesge;
     private T data;

@@ -1,9 +1,6 @@
 /**
- * projectName: cloud2020-   
- * fileName: ApplicationContextConfig.java  
- * packageName: com.demo.config   
- * date: 2020-09-20
- * copyright(c) 2017-2020 xxx公司  
+ * projectName: cloud2020- fileName: ApplicationContextConfig.java packageName: com.demo.config
+ * date: 2020-09-20 copyright(c) 2017-2020 xxx公司
  */
 package com.demo.config;
 
@@ -19,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
  * @packageName: com.demo.config
  * @description: config配置类
  * @data: 2020-09-20
- **/
+ */
 @Configuration
 public class ApplicationContextConfig {
     @Bean

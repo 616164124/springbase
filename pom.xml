@@ -21,6 +21,8 @@
         <module>SpringSectury2020</module>
         <module>netty</module>
         <module>netty</module>
+        <module>SpringbootAOP</module>
+        <module>springbootAOP</module>
     </modules>
     <packaging>pom</packaging>
 
