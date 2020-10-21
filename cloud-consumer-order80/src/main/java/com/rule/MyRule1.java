@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: MyRule
  * @packageName: com.rule
  * @description: ribbon负载均衡策略

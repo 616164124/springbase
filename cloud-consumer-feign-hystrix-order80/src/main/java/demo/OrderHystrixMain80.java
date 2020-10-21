@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: OrderHystrixMain80
  * @packageName: demo
  * @description: OrderHystrixMain80 启动类

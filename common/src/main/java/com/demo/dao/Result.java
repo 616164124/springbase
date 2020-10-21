@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: Result
  * @packageName: com.demo.dao
  * @description: 公共信息结果类

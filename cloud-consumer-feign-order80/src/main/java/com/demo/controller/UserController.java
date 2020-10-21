@@ -16,7 +16,7 @@ import javax.annotation.Resource;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: userController
  * @packageName: com.demo.controller
  * @description: user控制类

@@ -11,7 +11,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: PaymentHystrixMain8001
  * @packageName: com.demo
  * @description: PaymentHystrixMain8001 启动类

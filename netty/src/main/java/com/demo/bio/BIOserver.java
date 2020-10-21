@@ -13,11 +13,12 @@ import java.util.concurrent.Executors;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: BIOserver
  * @packageName: com.demo.bio
  * @description: bio类
  * @data: 2020-09-25
+ *
  */
 public class BIOserver {
     public static void main(String[] args) throws IOException {

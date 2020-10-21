@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: Payment8001
  * @packageName: com
  * @description: 8001启动类

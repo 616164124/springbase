@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: GateWayMain9527
  * @packageName: com.demo
  * @description: GateWayMain9527 启动类

@@ -8,7 +8,7 @@ import java.nio.IntBuffer;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: BasicBuffer
  * @packageName: com.demo.nio
  * @description:

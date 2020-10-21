@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: User
  * @packageName: com.demo.dao
  * @description: User实体类

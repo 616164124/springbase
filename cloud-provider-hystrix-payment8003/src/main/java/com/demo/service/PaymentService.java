@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: PaymentService
  * @packageName: com.demo.service
  * @description: PaymentService服务类

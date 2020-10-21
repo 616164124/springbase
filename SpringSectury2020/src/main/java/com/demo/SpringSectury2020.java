@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: SpringSectury2020
  * @packageName: com.demo
  * @description: SpringSectury2020启动类

@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @version: V1.0
- * @author: stjh756
+ * @author: mikael
  * @className: FeignOrder80
  * @packageName: com.demo
  * @description: feignOrder80启动类
