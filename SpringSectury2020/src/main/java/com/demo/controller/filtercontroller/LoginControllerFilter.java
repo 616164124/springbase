@@ -18,13 +18,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoginControllerFilter {
 
-    @GetMapping(path = "/filterlogin")
-    public void doLogin() {
-        System.out.println("进入filterloginlogin页面");
-    }
+  @GetMapping(path = "/filterlogin")
+  public void doLogin() {
+    System.out.println("进入filterloginlogin页面");
+  }
 
-    @GetMapping(path = "/filteradmin")
-    public void doAdmin() {
-        System.out.println("进入filteradminadmin页面");
-    }
+  @GetMapping(path = "/filteradmin")
+  public void doAdmin() {
+    System.out.println("进入filteradminadmin页面");
+  }
 }

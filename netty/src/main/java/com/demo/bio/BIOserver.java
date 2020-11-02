@@ -18,31 +18,30 @@ import java.util.concurrent.Executors;
  * @packageName: com.demo.bio
  * @description: bio类
  * @data: 2020-09-25
- *
  */
 public class BIOserver {
-    public static void main(String[] args) throws IOException {
+  public static void main(String[] args) throws IOException {
 
-        // 创建线程池
-        ExecutorService executorService = Executors.newCachedThreadPool();
+      // 创建线程池
+      ExecutorService executorService = Executors.newCachedThreadPool();
 
-        // 添加监听端口 6666
-        ServerSocket serverSocket = new ServerSocket(6666);
-        System.out.println("服务端开启 。。。。");
-        while (true) {
-            final Socket accept = serverSocket.accept();
-            System.out.println("连接到客户端。。。。。");
-            // 创建一个线程与之通信（单独写一个方法）
-            executorService.execute(
-                    new Runnable() {
-                        @Override
-                        public void run() { // 重写
-                            // 可以与客户端通讯
-                            handler(accept);
-                        }
-                    });
-        }
-    }
+      // 添加监听端口 6666
+      ServerSocket serverSocket = new ServerSocket(6666);
+      System.out.println("服务端开启 。。。。");
+      while (true) {
+          final Socket accept = serverSocket.accept();
+          System.out.println("连接到客户端。。。。。");
+          // 创建一个线程与之通信（单独写一个方法）
+          executorService.execute(
+                  new Runnable() {
+                      @Override
+                      public void run() { // 重写
+                          // 可以与客户端通讯
+                          handler(accept);
+                      }
+                  });
+      }
+  }
 
     // 编写一个handler方法，和客户端通讯
     public static void handler(Socket socket) {
