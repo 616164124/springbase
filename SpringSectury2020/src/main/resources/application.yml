@@ -2,4 +2,8 @@ server:
   port: 5001
   servlet:
     context-path: /sectury
-
+##
+spring:
+  profiles: dev
+swagger2:
+  enable: true

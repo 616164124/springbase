@@ -31,13 +31,13 @@ public class loginInterceptors extends WebMvcConfigurationSupport {
       public boolean preHandle(
               HttpServletRequest request, HttpServletResponse response, Object handler)
               throws Exception {
-        System.out.println(request.getServletPath());
-        // 跳转到 /error 页面
-        //  request.getRequestDispatcher("/error").forward(request,response);
-        System.out.println(request.getHeader("Referer"));
-        response.sendRedirect("/error");
-        System.out.println("拦截");
-        return true; // true 之后进入controller
+          System.out.println(request.getServletPath());
+          // 跳转到 /error 页面
+          //  request.getRequestDispatcher("/error").forward(request,response);
+          System.out.println(request.getHeader("Referer"));
+          response.sendRedirect("/error");
+          System.out.println("拦截");
+          return true; // true 之后进入controller
       }
     };
   }

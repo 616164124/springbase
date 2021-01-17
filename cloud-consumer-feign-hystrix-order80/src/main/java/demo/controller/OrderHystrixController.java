@@ -24,25 +24,25 @@ import javax.annotation.Resource;
  */
 @RestController
 public class OrderHystrixController {
-    private static final Logger log = LoggerFactory.getLogger(OrderHystrixController.class);
+  private static final Logger log = LoggerFactory.getLogger(OrderHystrixController.class);
 
-    @Resource
-    private PaymentHystrixService paymentHystrixService;
+  @Resource
+  private PaymentHystrixService paymentHystrixService;
 
-    @Value("${server.port}")
-    private String serverPort;
+  @Value("${server.port}")
+  private String serverPort;
 
-    @GetMapping("/consumer/payment/hystrix/ok/{id}")
-    public String paymentInfo_OK(@PathVariable("id") Integer id) {
-        String result = paymentHystrixService.paymentInfo_OK(id);
-        log.info("*******result:" + result);
-        return result;
-    }
+  @GetMapping("/consumer/payment/hystrix/ok/{id}")
+  public String paymentInfo_OK(@PathVariable("id") Integer id) {
+    String result = paymentHystrixService.paymentInfo_OK(id);
+    log.info("*******result:" + result);
+    return result;
+  }
 
-    @GetMapping("/consumer/payment/hystrix/timeout/{id}")
-    public String paymentInfo_TimeOut(@PathVariable("id") Integer id) {
-        String result = paymentHystrixService.paymentInfo_TimeOut(id);
-        log.info("*******result:" + result);
-        return result;
-    }
+  @GetMapping("/consumer/payment/hystrix/timeout/{id}")
+  public String paymentInfo_TimeOut(@PathVariable("id") Integer id) {
+    String result = paymentHystrixService.paymentInfo_TimeOut(id);
+    log.info("*******result:" + result);
+    return result;
+  }
 }

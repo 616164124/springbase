@@ -26,27 +26,27 @@ import javax.servlet.http.HttpServletRequest;
 @Aspect
 @Component
 public class AspectTest {
-    private static final Logger logger = LoggerFactory.getLogger(AspectTest.class);
+  private static final Logger logger = LoggerFactory.getLogger(AspectTest.class);
 
-    @Autowired
-    private HttpServletRequest request;
+  @Autowired
+  private HttpServletRequest request;
 
-    // excution()  表达式
-    @Pointcut("@annotation(com.example.mikael.annotation.Pointcuts)")
-    public void piontCut() {
-    }
+  // excution()  表达式
+  @Pointcut("@annotation(com.example.mikael.annotation.Pointcuts)")
+  public void piontCut() {
+  }
 
-    // 注解方法  实现之前执行
-    @Before("piontCut()")
-    public void piontCutBefore() {
-        String requestURI = request.getRequestURI();
-        logger.info("--------前置通知---------" + requestURI);
-    }
+  // 注解方法  实现之前执行
+  @Before("piontCut()")
+  public void piontCutBefore() {
+    String requestURI = request.getRequestURI();
+    logger.info("--------前置通知---------" + requestURI);
+  }
 
-    @Around("piontCut()")
-    public void piontCutAround(ProceedingJoinPoint joinPoint) throws Throwable {
-        logger.info("---环绕通知前--");
-        Object proceed = joinPoint.proceed(); // 执行目标方法
-        logger.info("---环绕通知后--");
-    }
+  @Around("piontCut()")
+  public void piontCutAround(ProceedingJoinPoint joinPoint) throws Throwable {
+    logger.info("---环绕通知前--");
+    Object proceed = joinPoint.proceed(); // 执行目标方法
+    logger.info("---环绕通知后--");
+  }
 }

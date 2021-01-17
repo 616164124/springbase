@@ -28,6 +28,7 @@ public class DiscoveryClinet {
 
     @GetMapping("/discovery")
     public List<String> discoveryClient() {
+        /** 获取注册中心的服务列表 */
         List<String> services = discoveryClient.getServices();
         // 获取实例 及实例中的具体信息
     /*List<ServiceInstance> instances = discoveryClient.getInstances();

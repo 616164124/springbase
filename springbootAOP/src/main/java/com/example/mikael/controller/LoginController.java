@@ -19,14 +19,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoginController {
 
-    @GetMapping(path = "/login")
-    @Pointcuts
-    public void doLogin() {
-        System.out.println("进入login页面");
-    }
+  @GetMapping(path = "/login")
+  @Pointcuts
+  public void doLogin() {
+    System.out.println("进入login页面");
+  }
 
-    @GetMapping(path = "/admin")
-    public void doAdmin() {
-        System.out.println("进入admin页面");
-    }
+  @GetMapping(path = "/admin")
+  public void doAdmin() {
+    System.out.println("进入admin页面");
+  }
 }
